@@ -1,8 +1,22 @@
 # SR checking for the 2026 SAT Competition
 
-## Instructions
+## Installation
 
-Hello world.
+This project requires:
+- Bash.
+- Python 3.11 or greater. We recommend using a standard software package manager such as `brew`, `yum`, or `apt` to install Python. Alternatively, you can download Python [here](https://www.python.org/downloads/).
+- Lean 4. We recommend using the VS Code Lean extension and/or the `elan` CLI tool. You can find instructions for installing Lean [here](https://lean-lang.org/install/).
+
+This project also depends on two `git` submodules:
+
+- [`dsr-trim`](https://github.com/ccodel/dsr-trim), an unverified DSR and LSR checking tool.
+- [`trestle`](https://github.com/FormalSAT/trestle), a Lean project for verified SAT tools and encodings.
+
+You should see `dsr-trim` and `trestle` as two sub-folders in this project.
+However, if those folders are empty on your machine, you can force `git` to download them by running:
+```bash
+git submodule update --init --recursive
+```
 
 ## Quick start
 
