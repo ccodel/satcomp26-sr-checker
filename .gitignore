@@ -1,0 +1,27 @@
+# CNF and proof files
+*.cnf
+*.drat
+*.lrat
+*.pr
+*.dpr
+*.lpr
+*.ppr
+*.sr
+*.dsr
+*.lsr
+
+# Mac and dev
+*.swp
+*.swo
+*.DS_Store
+.vscode/*
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Executables
+*.exe
+*.out
