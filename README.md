@@ -15,12 +15,44 @@ This project also depends on two `git` submodules:
 You should see `dsr-trim` and `trestle` as two sub-folders in this project.
 However, if those folders are empty on your machine, you can force `git` to download them by running:
 ```bash
-git submodule update --init --recursive
+./init.sh   # which runs the following command:
+# git submodule update --init --recursive
 ```
 
-## Quick start
+## Build
 
-Hello world.
+Pull the code for the dependencies by running `update.sh`, then build it with `build.sh`:
+```bash
+./init.sh
+./build.sh
+```
+
+To manually build the code, run these commands:
+```bash
+cd dsr-trim
+make
+
+cd trestle
+lake build srcheck
+```
+
+## Check a proof
+
+To check a proof file, use `check.sh`.
+The script expects two arguments:
+the path to the CNF file, and the path to the DRAT/DSR proof file.
+During checking, an LSR proof file is generated,
+the path of which is formed by replacing the `<drat>` file's extension with `.lsr`.
+```bash
+./check.sh <cnf> <drat>
+```
+
+If checking is successful, you should see an LSR proof file in the same directory as `<drat>`, and in the terminal:
+```
+s VERIFIED UNSAT
+```
+
+The proof is left over, so make sure to clean up afterwards, if necessary.
 
 ## Citations
 

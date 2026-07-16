@@ -1,6 +1,8 @@
 [submodule "dsr-trim"]
 	path = dsr-trim
 	url = https://github.com/ccodel/dsr-trim
+	branch = main
 [submodule "trestle"]
 	path = trestle
 	url = https://github.com/FormalSAT/trestle
+	branch = dev
