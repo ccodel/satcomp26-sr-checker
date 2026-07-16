@@ -21,7 +21,7 @@ However, if those folders are empty on your machine, you can force `git` to down
 
 ## Build
 
-Pull the code for the dependencies by running `update.sh`, then build it with `build.sh`:
+Pull the code for the dependencies by running `init.sh`, then build it with `build.sh`:
 ```bash
 ./init.sh
 ./build.sh

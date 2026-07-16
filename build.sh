@@ -32,7 +32,7 @@ lake build srcheck
 cd ..
 
 echo ""
-echo "Making symlinks for lean-check..."
+echo "Making symlink for lean-check..."
 ln -sf "$TRESTLE/.lake/build/bin/srcheck" ./lean-check
 
 echo "All done!"
